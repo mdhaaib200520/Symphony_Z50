@@ -100,6 +100,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TWHAVE_SELINUX := true
 # Remove MTP support
 TW_EXCLUDE_MTP := true
-TARGET_SCREEN_WIDTH=720
-TARGET_SCREEN_HEIGHT=1600
+TARGET_SCREEN_WIDTH := $(shell getprop ro.sf.lcd_width)
+TARGET_SCREEN_HEIGHT := $(shell getprop ro.sf.lcd_height)
 TW_THEME=landscape_hdpi 
+
