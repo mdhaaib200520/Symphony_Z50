@@ -92,15 +92,16 @@ PB_DISABLE_DEFAULT_DM_VERITY := true
 
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_SUPERSU := true
-TW_EXCLUDE_MTP := true
+TW_MTP_ENABLED := true
 TW_OEM_BUILD := true
 # Add EXT4 support
 TARGET_USERIMAGES_USE_EXT4 := true
 # Disable/enable SELinux. Only suggested when you want to enable SELinux support
 TWHAVE_SELINUX := true
 # Remove MTP support
-TW_EXCLUDE_MTP := true
-TARGET_SCREEN_WIDTH := 1600
-TARGET_SCREEN_HEIGHT := 720
+TW_EXCLUDE_MTP := false
+TARGET_SCREEN_WIDTH=720
+TARGET_SCREEN_HEIGHT=1600
+
 TW_THEME :=landscape_mdpi
 TARGET_SUPPORTS_64_BIT_APPS := true
